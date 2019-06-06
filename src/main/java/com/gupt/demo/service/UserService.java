@@ -17,5 +17,7 @@ public class UserService {
 		return  userMapper.selectUser(user.getUserName(), user.getPassword());
 	}
 
-	
+	public int insert(User user){
+		return userMapper.insert(user);
+	}
 }
